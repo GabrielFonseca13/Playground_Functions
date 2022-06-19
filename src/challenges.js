@@ -3,6 +3,8 @@
 function compareTrue(animal1, animal2) {
   if (animal1 === true && animal2 === true) {
     return true;
+  } else if (animal1 === true && animal2 === false){
+    return false;
   } else {
     return false;
   }
@@ -14,7 +16,7 @@ function calcArea(base, height) {
   let resultado = (base * height) / 2;
   return resultado;
 }
-console.log(calcArea());
+console.log(calcArea(10,50));
 
 
 // Desafio 3
@@ -24,9 +26,8 @@ function splitSentence() {
 }
 
 // Desafio 4
-function concatName(names) {
-  names = []
-  for (let index = o)
+function concatName() {
+
   
 }
 
@@ -36,7 +37,7 @@ function footballPoints(wins, ties) {
   let sumPoints = pointWins + ties;
   return sumPoints   
 }
-console.log(footballPoints(0,0));
+console.log(footballPoints(10,15));
 
 // Desafio 6
 function highestCount() {
