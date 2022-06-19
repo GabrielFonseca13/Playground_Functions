@@ -14,22 +14,29 @@ function calcArea(base, height) {
   let resultado = (base * height) / 2;
   return resultado;
 }
+console.log(calcArea());
 
 
 // Desafio 3
 function splitSentence() {
+
   // seu código aqui
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(names) {
+  names = []
+  for (let index = o)
+  
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let pointWins = wins * 3
+  let sumPoints = pointWins + ties;
+  return sumPoints   
 }
+console.log(footballPoints(0,0));
 
 // Desafio 6
 function highestCount() {
