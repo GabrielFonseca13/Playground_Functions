@@ -98,14 +98,28 @@ function fizzBuzz(parametro) {
   return valor;
 }
 console.log(fizzBuzz([2, 15, 7, 9, 45]));
-// Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
 
+// Desafio 9
+//implementar uma funçao que codifica e decodifica
+//criar estrutura para substituir vogal por números
+// criar estrutura para substituir números por vogais
+function encode(parametro) {
+  let resultado1 = parametro.replaceAll('a', '1');
+  let resultado2 = resultado1.replaceAll('e','2');
+  let resultado3 = resultado2.replaceAll('i','3');
+  let resultado4 = resultado3.replaceAll('o','4');
+  let resultado5 = resultado4.replaceAll('u','5');
+  return resultado5;
+}
+function decode(parametro) {
+  let resultado1 = parametro.replaceAll('1', 'a');
+  let resultado2 = resultado1.replaceAll('2','e');
+  let resultado3 = resultado2.replaceAll('3','i');
+  let resultado4 = resultado3.replaceAll('4','o');
+  let resultado5 = resultado4.replaceAll('5','u');
+  return resultado5;
+}
+console.log(decode('H4w 1r2 y45 t4d1y?'));
 // Desafio 10
 function techList() {
   // seu código aqui
