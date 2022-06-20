@@ -17,9 +17,11 @@ function calcArea(base, height) {
 console.log(calcArea());
 
 // Desafio 3
-function splitSentence() {
-  
+function splitSentence(palavras) {
+  resultado = palavras.split(' ');
+  return resultado;
 }
+console.log(splitSentence('go Trybe'));
 
 // Desafio 4
 function concatName(names) {
