@@ -3,41 +3,44 @@
 function compareTrue(animal1, animal2) {
   if (animal1 === true && animal2 === true) {
     return true;
-  } else if (animal1 === true && animal2 === false){
+  } else if (animal1 === true && animal2 === false) {
     return false;
   } else {
     return false;
   }
 }
-console.log(compareTrue('girafa','elefante'));
+console.log(compareTrue('girafa', 'elefante'));
 
 // Desafio 2
 function calcArea(base, height) {
   let resultado = (base * height) / 2;
   return resultado;
 }
-console.log(calcArea(10,50));
-
+console.log(calcArea(10, 50));
 
 // Desafio 3
 function splitSentence() {
-
   // seu código aqui
 }
 
 // Desafio 4
-function concatName() {
-
-  
+function concatName(names) {
+  for (let index = 0; index < names.length; index += 1) {
+    let firstName = names[0];
+    let lastName = names[names.length - 1];
+    let resultado = lastName + ', ' + firstName;
+    return resultado
+  }
 }
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  let pointWins = wins * 3
+  let pointWins = wins * 3;
   let sumPoints = pointWins + ties;
-  return sumPoints   
+  return sumPoints;
 }
-console.log(footballPoints(10,15));
+console.log(footballPoints(10, 15));
 
 // Desafio 6
 function highestCount() {
